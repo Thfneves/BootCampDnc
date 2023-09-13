@@ -10,54 +10,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BootCamp</title>
-    <style>
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-      #menu {
-        width: 45%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: 5%;
-      }
-      #principal {
-        width: 100%;
-        height: 100px;
-        border: 1px solid black;
-        background-color: #303030;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: #bababa;
-      }
-      #principal div a {
-        font-size: 25px;
-        font-weight: 600;
-        color: white;
-        font-family: "Inter";
-        text-decoration: none;
-      }
-
-      #principal div a:hover {
-        color: #cccccc;
-      }
-      #principal button {
-        margin-right: 5%;
-        text-decoration: none;
-        background-color: rgb(0, 72, 255);
-        border: 0px;
-        height: 40px;
-        width: 80px;
-        border-radius: 3px;
-        font-size: 20px;
-        font-family: "inter";
-        font-weight: 600;
-        color: white;
-        box-shadow: 3px 2px 4px rgb(12, 112, 242, 0.25);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav id="principal">
@@ -68,5 +21,53 @@
       </div>
       <button>Login</button>
     </nav>
+    <section>
+      <h1>Bootcamp dnc</h1>
+
+      <h2>
+        Esse será um evento exclusivo para todos os alunos
+        <br />da <b>DNC</b>, que querem
+        <span class="invert">acelerar a carreira</span> com uma <br />semana
+        intensiva de conteúdo de mercado entre<br />
+        <br />
+        <span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+      </h2>
+      <form>
+        <div class="form-group">
+          <label> Nome:</label>
+          <input type="text" placeholder="Insira seu Nome" />
+        </div>
+        <div class="form-group">
+          <label> Sobrenome:</label>
+          <input type="text" placeholder="Insira seu Sobrenome" />
+        </div>
+
+        <div class="form-group">
+          <label> Area de interesse :</label>
+          <div class="checkbox-itens">
+            <input type="checkbox" value="front" />
+            <label>Front-end</label>
+            <input type="checkbox" value="back" />
+            <label>Back-end</label>
+            <input type="checkbox" value="bd" />
+            <label>Banco</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label> Email:</label>
+          <input type="email" placeholder="Insira seu Email" />
+        </div>
+        <div class="form-group">
+          <label> Telefone:</label>
+          <input type="text" placeholder="(99) 99999-9999" />
+        </div>
+        <div class="form-group">
+          <label> Insira uma frase criativa:</label>
+          <input type="text" placeholder="Nos conte uma frase criativa" />
+        </div>
+        <input type="submit" value="Cadastrar" />
+      </form>
+    </section>
   </body>
 </html>
